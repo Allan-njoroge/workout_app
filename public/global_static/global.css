@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary: rgb(255 3 54);
+    --bright: #fafafa;
+    --dark: #000;
+    --radius: 10px;
+    --max-w: 1440px;
+}
+
+*{
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--bright);
+}
+
+/* navbar */
+.navbar-container{
+    background-color: var(--dark);
+    color: var(--bright);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: var(--max-w);
+    background: transparent;
+}
+.logo{
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--bright);
+}
+.logo:hover{
+    color: none;
+}
+.logo span{
+    color: var(--primary);
+}
+.nav-links{
+    display: flex;
+    gap: 15px;
+    margin: auto;
+}
+.nav-links a{
+    color: var(--bright);
+}
+
+
+/* buttons */
+button{
+    border: none;
+    transition: all ease-in-out .5s;
+    padding: 10px 20px;
+    border-radius: var(--radius);
+    cursor: pointer;
+}
+.pry-btn, .sec-btn:hover{
+    background: var(--primary);
+    border: 1px solid var(--primary);
+    color: var(--bright);
+}
+.sec-btn, .pry-btn:hover{
+    border: 1px solid var(--primary);
+    background: transparent;
+    color: var(--primary);
+}
+
+/* links */
+a{
+    text-decoration: none;
+    transition: all ease-in-out .5s;
+}
+a:hover{
+    color: var(--primary);
+}
+/* list*/
+li{
+    list-style-type: none;
+}
+
+/* input */
+input{
+    background: transparent;
+    padding: 10px;
+    border-radius: var(--radius)
+}
+input:focus{
+    outline: none;
+    border: 1px solid var(--primary);
+}
