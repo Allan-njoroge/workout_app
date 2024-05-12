@@ -9,25 +9,100 @@
     <!--    link to stylesheets     -->
     <link rel="stylesheet" href="website/home/style.css" />
     <link rel="stylesheet" href="global_static/global.css" />
+
+    <!--google icons-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
+    <!--navbar-->
     <div class="navbar-container">
-        <nav>
-          <a href="/" class="logo">Fit<span>Track</span></a>
-            <!--nav items list-->
-            <ul class="nav-links">
-                <li><a href="/">HOME</a></li>
-                <li><a href="/about">ABOUT</a></li>
-                <li><a href="/contact">CONTACT</a></li>
-            </ul>
-            <!--nav btn container-->
-            <div class="btn-container">
-              <a href="/login"><button class="pry-btn">LOGIN</button></a>
-              <a href="/signup"><button class="sec-btn">SIGN UP</button></a>
-            </div>
-        </nav>
+      <nav>
+        <a href="/" class="logo">Fit<span>Track</span></a>
+
+        <!--nav items list-->
+        <ul class="nav-links menuClosed">
+          <li><a href="/">HOME</a></li>
+          <li><a href="/about">ABOUT</a></li>
+          <li><a href="/contact">CONTACT</a></li>
+
+          <div class="btn-container">
+            <a href="/login"><button class="pry-btn">LOGIN</button></a>
+            <a href="/signup"><button class="sec-btn">SIGN UP</button></a>
+          </div>
+        </ul>
+
+        <!--menu icons-->
+        <span class="material-symbols-outlined" id=menu-icon>
+            menu
+          </span>
+      </nav>
     </div>
-    <h1>Home</h1>
+
+    <!--header section-->
+    <section class="section header-section">
+      <div class="section-container">
+        <h5>FIND YOUR ENERGY</h5>
+        <h1>
+          MAKE YOUR BODY <br>
+          <span>FIT & PERFECT</span>
+        </h1>
+        <a href="/signup"><button class="pry-btn">GET STARTED</button></a>
+      </div>
+    </section>
+
+    <!--card section-->
+    <section class="section" id="main-card-section">
+      <div class="section-container card-section">
+
+        <!--card-->
+        <div class="card">
+          <span class="material-symbols-outlined card-icon">progress_activity</span>
+          <h3>PROGRESSION</h3>
+          <p>
+            Our program will help you have a list of workouts to do, that will enable you to achieve your health and fitness goals successfully one step at a time.
+          </p>
+        </div>
+
+        <!--card-->
+        <div class="card">
+          <span class="material-symbols-outlined card-icon">exercise</span>
+          <h3>TRANSFORMATION</h3>
+          <p>
+            Transform your lifestyle with our comprehensive program, guiding you through tailored workouts and strategies to reach your wellness objectives progressively.
+          </p>
+
+        </div>
+
+        <!--card-->
+        <div class="card">
+          <span class="material-symbols-outlined card-icon">trophy</span>
+          <h3>ACHIEVEMENT</h3>
+          <p>
+            Unlock your potential for success with our structured program, designed to empower you with a curated list of workouts, paving the way for your fitness journey to triumph.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!--next level-->
+    <section class="section">
+      <div class="section-container">
+        <!--text section-->
+        <div>
+          <h1>Take Your Fitness To The Next Level</h1>
+          <p>
+            Take your health and body goals to the next level with our comprehensive program to help you reach the your fitness goals.
+          </p>
+          <a href="/signup"><button class="sec-btn">Start Now</button></a>
+        </div>
+        <!--image-->
+        <img src="images/banner.jpg" alt="">
+      </div>
+    </section>
 
     <!--    link to script tags    -->
     <script src="global_static/global.js"></script>

@@ -6,6 +6,12 @@
     --dark: #000;
     --radius: 10px;
     --max-w: 1440px;
+
+    /* screen size */
+    --sm: 640px;
+    --md: 768px;
+    --lg: 1024px;
+    --xl: 1280px; 
 }
 
 *{
@@ -43,19 +49,69 @@ nav{
 .logo:hover{
     color: none;
 }
-.logo span{
-    color: var(--primary);
-}
 .nav-links{
     display: flex;
-    gap: 15px;
-    margin: auto;
+    gap: 20px;
+    align-items: center;
+}
+.logo span{
+    color: var(--primary);
 }
 .nav-links a{
     color: var(--bright);
 }
+.btn-container{
+    display: flex;
+    gap: 20px;
+    margin-left: 100px;
+}
+#menu-icon{
+    display: none;
+}
+
+/* responsive navbar */
+@media only screen and (max-width: 768px) {
+    .nav-links, .btn-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .btn-container{
+        align-items: center;
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    .links-container{
+        justify-content: center;
+    }
+    #menu-icon{
+        display: flex;
+        z-index: 9999;
+        font-size: 30px;
+    }
+    nav .nav-links,
+    .menuOpen,
+    .menuClosed{
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background-color: var(--dark);
+        transition: all ease-in-out .5s;
+    }
+    .menuOpen{
+        width: 100%;
+        opacity: 1;
+    }
+    .menuClosed{
+        right: 0;
+        width: 0;
+        opacity: 0;
+    }
+}
 
 
+/*==========    UI components   ==========*/
 /* buttons */
 button{
     border: none;
@@ -83,6 +139,7 @@ a{
 a:hover{
     color: var(--primary);
 }
+
 /* list*/
 li{
     list-style-type: none;
@@ -97,4 +154,17 @@ input{
 input:focus{
     outline: none;
     border: 1px solid var(--primary);
+}
+
+/* section */
+.section{
+    display: flex;
+    justify-content: center;
+}
+.section-container{
+    max-width: var(--max-w);
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
 }
