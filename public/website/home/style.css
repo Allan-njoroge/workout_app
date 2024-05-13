@@ -52,7 +52,7 @@
 }
 
 /* responsive card design */
- @media only screen and (max-width: 960px){
+@media only screen and (max-width: 960px){
     .card-section{
         flex-direction: column;
         gap: 30px;
@@ -60,3 +60,125 @@
  }
 
 /* next level section */
+.why-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 50px 0;
+}
+.why-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+}
+.why-container .img-container{
+    width: 100%;
+}
+.why-text-section{
+    text-align: left;
+}
+.why-container h1{
+    color: var(--dark);
+    margin: 10px 0;
+    font-size: 2.5rem;
+}
+.why-section .title{
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+.why-section p{
+    color: gray;
+}
+.why-section .icon-div{
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+.icon-div h3{
+    font-size: 1.5rem;
+    margin: 20px;
+}
+.icon-container span{
+    color: var(--bright);
+    font-size: 2rem;
+    margin: auto;
+    padding: 10px;
+    border-radius: 50%;
+    background: var(--primary);
+}
+.icon-container{
+    display: flex;
+}
+.big-screen-btn{
+    display: flex;
+}
+.small-screen-btn{
+    display: none;
+}
+
+/* Responsive why section */
+@media only screen and (max-width: 1024px) {
+    .why-container{
+        flex-direction: column;
+    }
+    .big-screen-btn{
+        display: none;
+    }
+    .small-screen-btn{
+        display: flex;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 624px){
+    .icon-container h3{
+        font-size: 1rem;
+    }
+    .why-section .icon-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        gap: 10px;
+    }
+}
+
+/* testimonials */
+.testimonials-container{
+    padding: 100px 0;
+}
+.testimonials-container h1{
+    color: var(--primary);
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.testimonials-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.testimonials-card{
+    background: #fff;
+    padding: 50px 20px;
+    border: 1px solid lightgray;
+    border-radius: var(--radius);
+    transition: all ease-in-out .5s;
+}
+.testimonials-card:hover{
+    background: var(--primary);
+    color: var(--bright);
+    transform: scale(1.05);
+}
+.testimonials-card h4{
+    margin-top: 20px;
+}
+
+/* responsive testimonials section */
+@media only screen and (max-width: 768px){
+    .testimonials-wrapper{
+        flex-direction: column;
+    }
+}
