@@ -1,9 +1,12 @@
 const express = require('express')
 const router = express.Router();
-const path = require('path');
 
-router.post('/signup', (req,res) => {
-    
+router.get('/signup', (req,res) => {
+    res.send('signup path')
+})
+
+router.get('/login', (req, res) => {
+    res.send('login path')
 })
 
 module.exports = router;
