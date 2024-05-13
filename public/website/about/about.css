@@ -1,5 +1,5 @@
 .header-section{
-    height: 100vh;
+    height: 50vh;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -8,55 +8,14 @@
     background-position: center;
     background-size: cover;
 }
-.section-container{
-   text-align: center;
-   flex-direction: column;
-}
-.section-container h5{
-    color: var(--primary);
-    font-size: 2em;
-    font-weight: 400;
-}
 .section-container h1{
     margin: 20px;
     color: var(--bright);
     font-size: 3rem;
 }
-.section-container h1 span{
-    font-weight: 400;
-}
-
-/*=====card section=====*/
-#main-card-section{
-   transform: translateY(-100px);
-}
-.card-section{
-    flex-direction: row;
-    justify-content: space-evenly;
-    gap: 30px;
-}
-.card{
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 20px 0px;
-    border: 1px solid lightgray;
-    transition: all ease-in-out .3s;
-}
-.card span{
-    font-size: 4rem;
-    color: var(--primary);
-}
-.card h3{
-    margin: 20px 0;
-    font-size: 2rem;
-}
-
-/* responsive card design */
-@media only screen and (max-width: 960px){
-    .card-section{
-        flex-direction: column;
-        gap: 30px;
-    }
+.section-container{
+    text-align: center;
+    flex-direction: column;
  }
 
 /* next level section */
@@ -65,7 +24,7 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 30px;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 .why-container img{
     width: 100%;
@@ -78,6 +37,7 @@
 }
 .why-text-section{
     text-align: left;
+    margin: auto 0;
 }
 .why-container h1{
     color: var(--dark);
@@ -113,19 +73,18 @@
     display: flex;
 }
 .big-screen-btn{
-    margin: 10px 0;
     display: flex;
 }
 .small-screen-btn{
     display: none;
 }
-
 /* Responsive why section */
 @media only screen and (max-width: 1024px) {
     .why-container{
         flex-direction: column;
     }
     .big-screen-btn{
+        margin: 10px 0;
         display: none;
     }
     .small-screen-btn{
@@ -144,42 +103,5 @@
         align-items: flex-start;
         text-align: left;
         gap: 10px;
-    }
-}
-
-/* testimonials */
-.testimonials-container{
-    padding: 100px 0;
-}
-.testimonials-container h1{
-    color: var(--primary);
-    font-size: 2rem;
-    margin-bottom: 40px;
-}
-.testimonials-wrapper{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 20px;
-}
-.testimonials-card{
-    background: #fff;
-    padding: 50px 20px;
-    border: 1px solid lightgray;
-    border-radius: var(--radius);
-    transition: all ease-in-out .5s;
-}
-.testimonials-card:hover{
-    background: var(--primary);
-    color: var(--bright);
-    transform: scale(1.05);
-}
-.testimonials-card h4{
-    margin-top: 20px;
-}
-
-/* responsive testimonials section */
-@media only screen and (max-width: 768px){
-    .testimonials-wrapper{
-        flex-direction: column;
     }
 }

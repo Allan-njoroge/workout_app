@@ -1,0 +1,49 @@
+.header-section{
+    height: 50vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: linear-gradient(rgba(1,1,1,0.7),rgba(1,1,1,0.7)), url('../../images/banner.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.header-section .section-container h1{
+    margin: 20px;
+    color: var(--bright);
+    font-size: 3rem;
+}
+.section-container{
+    text-align: center;
+    flex-direction: column;
+}
+
+/* contact section */
+.section-container{
+    flex-direction: row;
+    gap: 30px;
+    padding: 100px 0;
+}
+.section-container h1{
+    color: var(--primary);
+    font-size: 2rem;
+}
+.section-container div{
+    width: 50%;
+    text-align: left;
+    margin: auto 0;
+}
+.section-container form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .section-container{
+        flex-direction: column;
+    }
+    .section-container div{
+        width: 100%;
+    }
+}
