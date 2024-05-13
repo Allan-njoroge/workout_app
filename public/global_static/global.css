@@ -189,12 +189,12 @@ li{
 }
 
 /* input */
-input{
+input, textarea{
     background: transparent;
     padding: 10px;
     border-radius: var(--radius)
 }
-input:focus{
+input:focus, textarea:focus{
     outline: none;
     border: 1px solid var(--primary);
 }
