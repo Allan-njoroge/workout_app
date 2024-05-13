@@ -15,6 +15,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <!--data aos library animation-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!--navbar-->
@@ -43,7 +45,7 @@
     
     <!--header section-->
     <section class="section header-section">
-      <div class="section-container">
+      <div class="section-container" data-aos="fade-up">
         <h1>CONTACT US</h1>
       </div>
     </section>
@@ -52,7 +54,7 @@
     <section class="section">
       <div class="section-container">
         <!--text-section-->
-        <div>
+        <div data-aos="fade-up">
           <h1>
             We are here for help you! To shape your body.
           </h1>
@@ -62,7 +64,7 @@
         </div>
 
         <!--form section-->
-        <form action="">
+        <form action="" data-aos="fade-up">
           <h1>LEAVE US YOUR INFO</h1>
 
           <input type="text" placeholder="Full Name" required>
@@ -108,5 +110,15 @@
     
     <!--    link to script tags    -->
     <script src="global_static/global.js"></script>
+    <!--animate on scroll scripts-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        duration: 1200,
+        offset: 10,
+        easing: 'ease-in-out',
+      });
+    </script>
 </body>
 </html>

@@ -9,11 +9,14 @@
     <!--    link to stylesheets     -->
     <link rel="stylesheet" href="website/login/login.css">
     <link rel="stylesheet" href="global_static/global.css">
+
+    <!--data aos library animation-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!--header section-->
     <section class="section header-section">
-        <div class="form-container">
+        <div class="form-container" data-aos="fade-up">
             <h1>CREATE AN ACCOUNT</h1>
           <form action="">
             <input type="text" placeholder="First Name" id="firstName" required >
@@ -31,5 +34,15 @@
     
     <!--    link to script tags    -->
     <script src="global_static/global.js"></script>
+    <!--animate on scroll scripts-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        duration: 1200,
+        offset: 10,
+        easing: 'ease-in-out',
+      });
+    </script>
 </body>
 </html>
