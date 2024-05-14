@@ -1,17 +1,26 @@
-const express = require('express');
+import express from 'express';
 const app = express()
-const dotenv = require('dotenv');
-const path = require('path');
-const authRoute = require("./routes/auth")
-const exercisesRoute = require("./routes/exercises")
+import { fileURLToPath } from 'url';
+import dotenv from 'dotenv';
+import path from 'path';
+import authRoute from './routes/auth.js'
+import exercisesRoute from './routes/exercises.js'
 
 dotenv.config()
-app.use(express.static(path.join(__dirname, 'public')))
 
-// Redirection of website pages
+//  resolve the directory name
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+// serve static files from the public directory
+app.use(express.static(path.join(__dirname, 'public')));
+
+
+
+
+//========== Redirection of website pages
 // home page
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'pages/website/home.html'))
+    res.sendFile(path.join(__dirname, './pages/website/home.html'))
 })
 // about page
 app.get('/about', (req, res) => {
@@ -30,13 +39,17 @@ app.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, 'pages/website/login.html'))
 })
 
+
+
+
+//========== redirection to app page
 // discover page
 app.get('/discover', (req, res) => {
     res.sendFile(path.join(__dirname, 'pages/user/discover.html'))
 })
 // my-exercises page
-app.get('/my-exercise', (req, res) => {
-    res.sendFile(path.join(__dirname, 'pages/user/my-exercises.html'))
+app.get('/my-collection', (req, res) => {
+    res.sendFile(path.join(__dirname, 'pages/user/my-collection.html'))
 })
 // profile page
 app.get('/profile', (req, res) => {
@@ -51,6 +64,7 @@ app.use('/api/auth', authRoute)
 
 // exercises
 app.use('/api/exercises', exercisesRoute)
+
 
 
 

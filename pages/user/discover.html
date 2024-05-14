@@ -1,16 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Discover | TrackFit</title>
 
+    <!--google icons-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
     <!--style sheets-->
-    <link rel="stylesheet" href="global_static/global.css">
-    <link rel="stylesheet" href="user/discover/discover.css">
-</head>
-<body>
-    <h1>Discover</h1>
-</body>
+    <link rel="stylesheet" href="global_static/global.css" />
+    <link rel="stylesheet" href="user/discover/discover.css" />
+  </head>
+  <body>
+    <div class="navbar-container">
+      <nav>
+        <a href="/" class="logo">Fit<span>Track</span></a>
+
+        <ul class="nav-links menuClosed">
+          <li><a href="/discover">DISCOVER</a></li>
+          <li><a href="/my-collection">MY COLLECTION</a></li>
+          <li><a href="/profile">PROFILE</a></li>
+
+          <div class="btn-container">
+            <button class="pry-btn">LOGOUT</button>
+          </div>
+        </ul>
+
+        <!--menu icons-->
+        <span class="material-symbols-outlined" id="menu-icon"> menu </span>
+      </nav>
+    </div>
+
+    <!--header section-->
+    <section class="section header">
+      <div class="section-container">
+        <div class="title-section">
+          <h1 class="header-title">Exercises</h1>
+          <!--search bar-->
+          <div class="search-container">
+            <input type="text" placeholder="Search..." id="search" />
+            <button class="material-symbols-outlined pry-btn search-btn">
+              search
+            </button>
+          </div>
+        </div>
+
+        <div class="categories-section">
+          <h4 class="cat-title">Cardio</h4>
+        </div>
+
+        <div class="exercise-container">
+          <h1>hkshfal</h1>
+        </div>
+      </div>
+    </section>
+
+    <!--Srcipt files-->
+    <script src="/global_static/global.js"></script>
+    <script type="module" src="/user/discover/discover.js"></script>
+  </body>
 </html>

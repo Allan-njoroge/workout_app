@@ -1,0 +1,51 @@
+.navbar-container{
+    position: fixed;
+}
+.section-container{
+    flex-direction: column;
+}
+.header{
+    padding-top: 15vh;
+}
+.title-section{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.search-container{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    justify-content: end;
+    align-items: center;
+}
+#search{
+    width: 50%;
+}
+.header-title{
+    font-size: 2rem;
+}
+/* responsive search bar section */
+@media only screen and (max-width: 768px){
+    .title-section{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .search-container{
+        justify-content: start;
+    }
+    #search{
+        width: 90%;
+    }
+}
+
+/* categories-section */
+.categories-section{
+    margin: 30px 0;
+}
+
+/* Exercise section */
+.exercise-container{
+    margin: 50px 0;
+}
