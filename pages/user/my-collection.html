@@ -6,11 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Excercise | TrackFit</title>
 
+    <!--google icons-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
     <!--style sheets-->
     <link rel="stylesheet" href="global_static/global.css">
-    <link rel="stylesheet" href="user/my-excercises/my-excercises.css">
+    <link rel="stylesheet" href="user/my-collection/my-collection.css">
 </head>
 <body>
+    <div class="navbar-container">
+        <nav>
+          <a href="/" class="logo">Fit<span>Track</span></a>
+  
+          <ul class="nav-links menuClosed">
+            <li><a href="/discover">DISCOVER</a></li>
+            <li><a href="/my-collection">MY COLLECTION</a></li>
+            <li><a href="/profile">PROFILE</a></li>
+  
+            <div class="btn-container">
+              <button class="pry-btn">LOGOUT</button>
+            </div>
+          </ul>
+  
+          <!--menu icons-->
+          <span class="material-symbols-outlined" id="menu-icon"> menu </span>
+        </nav>
+      </div>
     <h1>My-excercise</h1>
+
+     <!--Srcipt files-->
+     <script src="/global_static/global.js"></script>
+     <script type="module" src="/user/discover/discover.js"></script>
 </body>
 </html>
